@@ -82,7 +82,7 @@ const getOneValidator = yup.object().shape({
 });
 const createSessionValidator = yup.object().shape({
   title: yup.string().required("عنوان جلسه الزامی است"),
-  time: yup.number().required("زمان جلسه الزامی است"),
+  time: yup.string().required("زمان جلسه الزامی است"),
   free: yup
     .number()
     .min(0, "وضعیت رایگان/غیررایگان باید 0 یا 1 باشد")
